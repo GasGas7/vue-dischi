@@ -11,9 +11,11 @@
     <title>Vue_Api_dischi</title>
 </head>
 <body>
-    
+    <header>logospotify</header>
     <div id="app">
-        
+        <div v-for="album in response">
+            <p>{{album.titolo}}</p>
+        </div>
     </div>
     
 
