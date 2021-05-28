@@ -12,13 +12,13 @@
 </head>
 <body>
     
-    <div class="container-xl">
+    <div class="contenitore">
         <header>
         <img class="img-fluid logo" src="./assets/img/logo-small.svg" alt="">
         </header>
         <div id="app">
         <div class="Playlist d-flex justify-content-center flex-wrap">
-            <div class="d-flex m-1 flex-column col-2 justify-content-center text-center carta" v-for="album in albums">
+            <div class="d-flex m-1 flex-column col-2 justify-content-around text-center carta" v-for="album in albums">
             
                 <img class="img-fluid align-self-center copertina" :src="album.poster" alt="">
                 

@@ -6,7 +6,9 @@
 body{
     background-color: #2e3a46;
 }
-.container-xl{
+.contenitore{
+    width: 80%;
+    margin:auto;
     background-color: #1e2d3b;
     padding: 0;
 }
@@ -17,11 +19,11 @@ header{
     margin:10px;
     width: 5%;
 }
-.card{
- margin:10px;
+.carta{
+ padding:10px;
 }
 .copertina{
-    width: 90%;
+    width: 100%;
     margin-bottom: 20px;
 }
 
