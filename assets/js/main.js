@@ -11,7 +11,7 @@ const app = new Vue ({
 
     data: {
         url:"https://flynn.boolean.careers/exercises/api/array/music",
-        titolo:"",
+        albums:[]
     },
     methods:{
         
@@ -20,9 +20,9 @@ const app = new Vue ({
         axios
             .get(this.url)
             .then(resp => {
-
-                this.titolo = resp.response;
-
+                console.log(resp);
+                this.albums = resp.data.response;
+                console.log(this.albums)
             }).catch(e => {
                 console.error(e)
             })
