@@ -24,7 +24,8 @@ const app = new Vue ({
                 this.albums = resp.data.response;
                 console.log(this.albums)
             }).catch(e => {
-                console.error(e)
+                console.error(e);
+                alert("La chioamata all'API non è andata a buon fine, riprova più tardi")
             })
     }
 
