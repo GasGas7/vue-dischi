@@ -1,3 +1,4 @@
+/* Utility class */
 *{
     box-sizing: border-box;
     padding: 0;
@@ -19,24 +20,39 @@ header{
     margin:10px;
     width: 5%;
 }
+/* /Utility class */
+
+/* Albums cards */
 .carta{
- padding:10px;
+    padding:10px;
+    min-height: fit-content;
+    max-width: 270px;
+}
+.contenitore_copertina{
+    height: 250px;
 }
 .copertina{
     width: 100%;
+    margin-top: 10px;
     margin-bottom: 20px;
+    max-height: 270px;
+    min-width: 200px;
 }
-
-.Playlist> div{
+.Playlist>div{
     background-color: #2e3a46;
 }
-
-h6{
+.titolo{
+    height: 30px;
+    margin-top: 25px;
     text-transform: uppercase;
     color:white
 }
-p{
+.author_year_p{
+    margin: 30px 0;
+}
+.author_year_p p{
     margin:0;
     font-weight: 500;
     color: gray;
 }
+/* Albums cards */

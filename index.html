@@ -11,33 +11,58 @@
     <title>Vue_Api_dischi</title>
 </head>
 <body>
-    
+    <!-- container [No bootstrap] -->
     <div class="contenitore">
+        <!-- Site_header -->
         <header>
-        <img class="img-fluid logo" src="./assets/img/logo-small.svg" alt="">
+            <img class="img-fluid logo" src="./assets/img/logo-small.svg" alt="">
         </header>
-        <div id="app">
-        <div class="Playlist d-flex justify-content-center flex-wrap">
-            <div class="d-flex m-1 flex-column col-2 justify-content-around text-center carta" v-for="album in albums">
-            
-                <img class="img-fluid align-self-center copertina" :src="album.poster" alt="">
-                
-                <div>
-                    <h6>
-                        {{album.title}}
-                    </h6>
-                    <p>
-                        {{album.author}}
-                    </p>
-                    <p>
-                        {{album.year}}
-                    </p>  
+        <!-- /Site_header -->
+
+        <!-- Site_Main -->
+        <main>
+            <!-- Call_VueJS -->
+            <div id="app">
+                <!-- Albums -->
+                <div class="Playlist d-flex justify-content-center flex-wrap">
+                    <!-- Single_Album -->
+                    <div class="d-flex m-1 flex-column col-2 justify-content-around text-center carta" v-for="album in albums">
+
+                        <!-- Almbum_image -->
+                        <div class="contenitore_copertina">
+                            <img class="img-fluid align-self-center copertina" :src="album.poster" alt="">
+                        </div>
+                        <!-- /Almbum_image -->
+
+                        <!-- Album_title -->
+                        <div class="titolo">
+                            <h6>
+                                {{album.title}}
+                            </h6> 
+                        </div>
+                        <!-- /Album_title -->
+
+                        <!-- Album_description -->
+                        <div class="author_year_p">
+                            <p>
+                                {{album.author}}
+                            </p>
+                            <p>
+                                {{album.year}}
+                            </p> 
+                        </div>
+                        <!-- /Album_description -->  
+                         
+                    </div>
+                    <!-- /Single_Album -->
                 </div>
-                
+                <!-- /Albums -->
             </div>
-        </div>
-    </div>
+            <!-- /Call_VueJS -->
+        </main>
+       
     
+    <!-- /container [No bootstrap] -->
         
     </div>
     
